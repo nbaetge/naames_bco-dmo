@@ -1,0 +1,54 @@
+Flow Cytometry Protocol for Determination of Bacterial Abundance 
+
+(I) Definition of Bacterial Abundance 
+Bacterial abundance is given in terms of the number of bacterial cells L-1 seawater. 
+
+(II) Description of Collection and Flow Cytometry Method
+Whole seawater samples are preserved with paraformaldehyde, frozen, and stored at -80˚C until analysis. Upon analysis, samples are stained with SYBR-Green I nucleic acid stain (Molecular Probes, Inc.), causing individual bacterial cells to fluoresce green under ultraviolet excitation by a flow cytometer, in this case a LSRII equipped with a high-throughput plate reader (Becton Dickinson (BD) Biosciences). The number of cells per sample is calculated from known volumes using the relationship between side-scatter and green light fluorescence. 
+
+(III) Procedure
+1 mL whole water samples are collected from every depth of sampled CTD casts. Each sample is fixed to a final concentration of 0.2% paraformaldehyde. Samples are mixed by inversion and then stored at -80˚C until analysis by flow cytometry. 
+
+Flow cytometry was performed using a BD LSR II  equipped with a BD High Throughput Sampler (HTS). The BD LSR II is designed with 4 lasers line colors (488 nm blue, 640 nm red, 405 nm violet, and 355 nm UV). The laser power for the excitation optics varies. The blue 488 nm laser’s power is 20 mW. The red  640 nm laser's power is 40 mW. The UV 355 nm laser's power is 20 mW. The 405 nm violet laser's power is 25 mW. Upon analysis, the LSR II was prepared according to the manufacturer's guidelines. Emission detector settings were as follows: 
+
+FITC Threshold: 200 nm
+Forward Scatter: 600 nm
+Side Scatter: 400 nm
+FITC (Fluorescein isothiocyanate): 470-520 nm
+
+Sample load settings were as follows: 
+
+µL/sec: 0.5
+µl sample: 45
+Number of mixes before acquisition: 0
+Wash volume (µl) between samples: 200  
+
+Samples were thawed and vortexed. 250 µl of each sample was transferred into a well of a 96-well plate that contains 2.5 µl of  SYBR-Green (100x dilution of commercial stock, Molecular Probes, Inc.). To ensure complete staining of bacterial cells, the plate was incubated for 15-30 minutes in darkness prior to analysis on the LSR II. Each well was analyzed for 90s. Populations of bacterial cells (events) on the flow cytometry dot-plots were interactively defined with gates using FACSDiva software (BD). 
+
+(IV) Calculations
+
+let: 
+µl sample anlayzed = 45
+number of events within gate = x 
+% PFA per sample = 0.0244
+% SYBR-Green per samples = 0.009901
+regression coefficient from internal references = y
+
+
+a = bacterial cells/µl = x/45
+			
+b = bacterial cells/µl corrected for dilution = a/(1-0.0244)/(1-0.009901)
+
+c = bacterial cells/mL = b*1000
+
+d = bacterial cells/mL corrected for machine performance = c/y
+
+e = bacterial cells/L = d*1000
+
+
+(V) Quality Control
+Spherotech Rainbow calibration beads (RCP-30-5) were used according to manufacturer's recommendations to diagnose cytometer laser detection performance. Internal references were also used to diagnose machine performance. These references included a series of diluted surface seawater samples from the Santa Barbara Channel (100%, 50%, 25%, 12.5%, 6.25%). Microscopy counts were attained from these reference seawater samples at the time of collection. The regression coefficient between these historical microscopy counts and the flow cytometry counts at the time of sample analysis is used as a correction factor to align microscopy counts with FCM counts.  
+
+(VI) References
+
+Halewood, E. R., C. A. Carlson, M. A. Brzezinski, D. C. Reed, and J. Goodman. 2012. Annual cycle of organic matter partitioning and its availability to bacteria across the Santa Barbara Channel continental shelf. Aquat. Micro- biol. Ecol. 67: 189–209. doi: 10.3354/ame01586

@@ -1,0 +1,81 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww17440\viewh9600\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0  Microcentrifuge Method Protocol for Determination of Bacterial Production Rates via 3H-Leucine incorporation\
+\
+(I) Definition of Bacterial Production \
+Bacterial production is the rate of synthesis of biomass by heterotrophic bacterioplankton, as estimated by the measurement of incorporated 3H-Leucine in the cold trichloroacetic acid-insoluble and cold ethanol-insoluble cell fractions following a short term incubation, using a suitable conversion factor, F: Bacterial production (C l-1h-1) = F([3H-Leu] pmol l-1h-1)\
+Where: F = production of bacterial carbon per mole 3H-Leucine incorporated (see below).\
+\
+(II) Description of Microcentrifuge Method\
+The microcentrifuge method is based on incorporation of methyl-tritiated-leucine into bacteria over a incubation time of 2- 3 hours which is then used to determine an incorporation rate and estimate bacterial production. The microcentrifuge method was first published by Smith and Azam (1992).\
+\
+(III) Procedure\
+Samples were spiked to a final concentraion of 20 nM leucine into 1.6 ml of sample using a 3-H Leu with a specific activity of 50.2 Ci /mmol.  Calculation to determine the volume of 3H Leu stock needed for desired sample volume:\
+uCi/ml\
+Specific Activity (SA) in Ci/mmol\
+Desired Concentration of Leu in Sample in nM\
+Sample Volume to be Incubated in ml\
+Volume of Stock to be Added to Sample Volume to be Incubated in ul\
+\
+[(Sample Volume)(Desired Conc.)(SA)] / (uCi/ml) = ul Stock to be Added to Each Sample*\
+\
+To increase accuracy of delivering low volume of spike we routinely dilute the 3H-Leu stock by 10X dilution with DNA free PCR water to reduce error in pipetting small volumes.  During NAAMES I and II we added 16.2 \'b5l of 10X diluted 3H-Leu to 1.6 mls of sample water within each microtube.\
+                                            \
+Preparation of Sample microtubes: This was witin 1-2 hours of sample collection.   Each profile included 2-3 replicate samples  for each sample depth where the calculated amount of 10X diluted 3H \'96Leu stock was pipetted into the 2.0ml non-sterile centrifuge tubes. One killed control was also prepared for each depth.  Killed controls were prepared by adding the stock volume calculated, 100ul 100% TCA, and vortexing to mix well. The prepared tubes were capped and stored in refrigerator until use.\
+ \
+(IV) Sampling, Incubation and Extraction\
+\'95 Collection of  Sample - Samples are collected directly from Niskin or Go-Flo bottles into acid cleaned and Q rinsed 50 ml polycarbonate bottles.  The bottles were rinsed 3X with sample before collecting.  Nitrile gloves should be worn at all times during sampling and processing.\
+\
+\'95Incubation- After the sample was collected the 1.6 ml of sample volume was added to to each prepared tube. The starting time of the incubation was recorded (since multiple samples are done, the starting time of the incubation is taken from the time sample is added to the first tube to the time sample is added to the last tube for each depth).  From 3 randomly selected samples take 10ul into a clean 2.0ml centrifuge tube for specific activities. All tubes were caped and mixed by gentlly inverting the incubation tubes 2 times.  Samples were incubated in the dark and as close to in situ temperatures as possible temperature was recorded.  After 2-3 hours (experiments have shown linearity of Leu incorporation to be up to 6 hours) the incubation were terminated by adding 100ul 100%TCA, time was recorded and sample and vortexed. Samples were stored in the refrigerator until extraction.\
+\
+\'95Extraction:\
+Samples were vortexed, a vertical line was drawn on the edge of microtube  and was placed in the rotor with the line facing outward.  \
+Samples were centrifuge for 7 minutes at 14,000 rpm \
+Rotor was removed and placed on ice and each sample was was pored out into waste container leaving pellet behind.\
+1.5 ml of 5% TCA was added, loaded in cold rotor and centrifuge for 7 minutes at 14,000 rpm.\
+Rotor was removed and placed on ice and each sample was was pored out into waste container leaving pellet behind.\
+1.5 ml of 80% ethanol was added, loaded in cold rotor and centrifuge for 7 minutes at 14,000 rpm.\
+Rotor was removed and placed on ice and each sample was was pored out into waste container leaving pellet behind.\
+1.5ml Ultima Gold was added and vortexed.  \
+Samples were placed on bench top for several hours prior to analyses in the liquid scintitalion counter. \
+\
+\'95 Counting the Samples: Samples were counted on a Hidex 300 Liquid Scintillation Analyzer with the following energy window settings:\
+Channel A: 0-19 KeV\
+Channel B: 2-19 KeV\
+Samples were counted for 2 minutes (tests show that 2 min counts yield similar results to 10min counts).   Quench corrections were obtained using an external gamma source that assesses quenching of individual samples for conversion of counts per minute (CPM) to disintegrations per minute (DPM). Quench curves were based on manufacture curves of 3H in Ultima Gold that were loaded into the Hidex 300 LSC software. \
+\
+\
+(V) Rate Calculations\
+	The rate of incorporation is reported as pmole 3H-Leucine taken up per time unit after time zero killed control values are subtracted.\
+Where:\
+	DPM 	=	disintegrations per minute of sample minus blank value\
+	V	=	extraction volume (1.7 ml)\
+	SA	= 	specific activity (of added 3H-thymidine)\
+	T	= 	incubation time (min)\
+A check on the final concentration of the tritiated incubation solution is estimated by converting the amount of the measured total activity into the final concentration of tritiated leucine.\
+Where:\
+	\'b5l 	=	aliquot taken from incubation solution (50 \'b5l)\
+	SA	= 	specific activity\
+\
+(VI) Quality Control\
+Standards and Precision: There is no absolute standard for bacterial production (3H-Leu incorporation) measurements and the accuracy is unknown. The coefficient of variation of assays performed carefully following this protocol were generally  1-15% for replicate incubations, however the deep samples generally had lower incorporation rates and CVs were often between 20 \'96 30%. \
+\
+Universal factors for conversion of  3H- leu incorporation into cell production do not exist (Kirchman et al. 1982; Ducklow and Carlson 1992) but there is fair consensus that the conversion factor (F) varies in the coastal and open ocean within 1.5 \'96 3 kg C  mol-1 Leu incorporated.\
+\
+\
+(VII) References\
+Smith, D.C. and F. Azam. 1992. A simple, economical method for measuring bacterial production synthesis rates in seawater.  Mar. Microbial Foodwebs. 6: 107-114.\
+\
+Simon, M. and F. Azam (1989). Protein content and protein synthesis rates of planktonic marine bacteria. Mar. Ecol. Prog. Ser. 51: 201-213.\
+\
+\
+\
+\
+\
+\
+}
