@@ -1,0 +1,84 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww25400\viewh13220\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 PROTOCOLS for Dissolved Organic Carbon and Total Dissolved Nitrogen Analysis\
+UCSB - CRAIG CARLSON\
+\
+Summary\
+\
+These protocols describe the high temperature combustion method for determining dissolved organic carbon and total dissolved nitrogen (TDN). The Carlson lab utilizes several Shimadzu TOC analyzer models, including TOC-V and TOC-L to analyze bulk DOC and TDN.  \
+\
+Sample collection for DOC and TDN -  All samples were filtered through 47 mm combusted Whatman GF/F glass fiber filters (0.7um nominal pore size; combusted at 450\'b0C for 6 hours) placed in polycarbonate cartridge attached directly to the Niskin bottle and dripped into 40 ml combusted EPA vials. The 30 ml of sample was acidified with 50 microliter of 4N HCL to a pH of ~3 and stored at 15\'b0C until analyses.  Thus operationally our samples are defined as DOC and TDN.\
+\
+DOC\
+\
+Definition:  The DOC content of seawater is defined as the total concentration of all non-volatile organic substance that pass a GF/F glass fiber filter and expressed as \'b5mol C kg-1 of seawater. \
+\
+Principal of analyses:   The  Shimadzu  High Temperature Combustion systems measure Non-purgeable Organic Carbon (NPOC). With this technique, the Total Inorganic Carbon (TIC) component of the sample is volatilized by acidifying the sample to a PH of to 2-3 with subsequent sparging (bubbling; 3 mls for 1.5 min at 150 mls/ min) to remove it from the solution.  Generally the amount of purgeable organic substances in the natural environment is small and NPOC can be considered DOC.  After the sample has been sparged 100 micrometers is injected into a combustion tube filled with platinized alumina catalyst heated to 680C.  The sample is burned in the tube and the CO2 combustion products are moved by a carrier gas through a dehumidifier which cools and dehydrates the sample. It then moves through magnesium perchlorate trap to remove any last water vapor from gas stream.  The gas then passes to a halogen scrubber to remove chlorine and other halogens.  Finally, the combustion products are introduced  to a non-dispersive infrared (NDIR) analyzer.  The TOC- V or L software measures the peak height of the analog signal produced by the detector.  The peak height is proportional to the organic carbon concentration of the sample. \
+\
+\
+DOC Analysis, Calibration & QC\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 The operating conditions of the Shimadzu TOC\'92s were slightly modified from the manufacturer\'92s model system. The condensation coil was removed and the headspace of\
+an internal water trap was reduced to minimize the system\'92s dead space. The combustion tube contained 0.5 cm Pt pillows placed on top of Pt alumina beads to improve peak shape and to reduce alteration of combustion matrix throughout the run. CO2 free carrier gas was produced with a Whatman\'ae gas generator (Carlson et al. 2010). Sample was drawn into a 5 ml injection syringe and acidified with 2M HCL (1.5%) and sparged for 1.5 minutes with CO2 free gas. Three to five replicate 100 \uc0\u956 l of sample were injected into combustion tube heated to 680\'b0 C. The resulting gas stream was passed though a several water and halide traps, the CO2 in the carrier gas was analyzed with a non-dispersive infrared detector and the resulting peak area was integrated with Shimadzu chromatographic software. Injections continued until the at least three injection meet the specified range of a SD of 0.1 area counts, CV \u8804 2% or best 3 of 5 injections. Extensive conditioning of the combustion tube with repeated injections of low carbon water (LCW) and deep seawater was essential to minimize the machine blanks. After conditioning, the system blank was assessed with UV oxidized low carbon water.\
+\
+The system response was standardized daily with a four-point calibration curve (25, 50, 75, 100 \'b5mol C L-1) of glucose solution in LCW, prepared gravimetrically. All samples are systematically referenced against low carbon water and deep Sargasso Sea (2600 m) or Santa Barbara Channel (400 m) reference waters and surface Sargasso Sea or Santa Barbara Channel sea water every 6 \'96 8 analyses (Hansell and Carlson 1998).  The standard deviation of the deep and surface references analyzed throughout a run generally have a coefficient of variation ranging between 1-3% over the 3-7 independent analyses (number of references depends on size of the run).  Daily reference waters were calibrated with DOC consensus reference material (CRM) provided by D. Hansell (University of Miami; Hansell 2005). \
+ \
+\
+DOC calculation\
+\
+\uc0\u956 MC = (average sample area \'96 average machine blank area) / (slope of C std curve)\
+\
+\
+Data from each DOC run were then streamed and summarized into a master file (excel based spreadsheet) which was merged with sample collection metadata (bottle & CTD data from ODF and GT-C bottle files).  Data were visualized using Ocean Data View (Schlitzer, R., Ocean Data View, http://odv.awi.de, 2016), assessed by individual station and profile, and WOCE quality flags added to identify outliers.  Any questionable samples or profiles are first re-analyzed. If reruns were repeatable within limits of instrument precision (1-2 uM C), an average of the two runs is reported. For samples that remain outliers (i.e. a sudden shift of 3 uM C or greater within an oceanic profile), WOCE flags are left in place to designate \'93bad\'94 or \'93questionable\'94.  \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+TDN Analysis, Calibration & QC\
+\
+Definition:  The TDN content of seawater is defined as the total concentration of all non-volatile nitrogen (organic and inorganic) that pass a GF/F glass fiber filter and expressed as mmol N m-3 of seawater. \
+\
+\
+Total Dissolved Nitrogen was also run independently on the TOC-L or V using an attached TNM1 unit.  When the sample is introduced to the combustion tube the TDN is decomposed to nitric oxide (NO).  The carrier gas introduces the NO to a chemiluminescence gas analyzer which generates a peak whose area is proportional to TDN concentration. (Walsh 1989; Shimadzu 2010).\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 The operating conditions of the Shimadzu TOC-V were slightly modified from the manufacturer\'92s model system. The condensation coil was removed and the headspace of an internal water trap was reduced to minimize the system\'92s dead space. The combustion tube contained 0.5 cm Pt pillows placed on top of Pt alumina beads to improve peak shape and to reduce alteration of combustion matrix throughout the run. Carrier gas was produced with a Whatman\'ae gas generator (Carlson et al. 2010) and ozone was generated by the TNM1 unit at 0.5L/min flow rate. Three to five replicate 100 \uc0\u956 l of sample were injected at 130mL/min flow rate into the combustion\
+tube heated to 720\'b0 C, where the TN in the sample was converted to nitric oxide (NO). The resulting gas stream was passed through an electronic dehumidifier. The dried NO gas then reacted with ozone producing an excited chemiluminescence NO2  species (Walsh 1989) and the fluorescence signal was detected with a Shimadzu TNM-1 chemiluminescence detector. The resulting peak area was integrated with Shimadzu chromatographic software. Injections continued until at least three injections meet the specified range of a SD of 0.1 area counts, CV \uc0\u8804 2% or best 3 of 5 injections. Extensive conditioning of the combustion tube with repeated injections of low nitrogen water and deep seawater was essential to minimize the machine blanks. After conditioning, the system blank was assessed with UV oxidized low nitrogen water. The system response was standardized daily with a four-point calibration curve of potassium nitrate solution in blank water (2, 8 , 16, 24 \'b5mol N L-1) prepared gravimetrically. All samples are systematically referenced against low carbon water and deep Sargasso Sea (2600 m) or Santa Barbara Channel (400 m) reference waters and surface Sargasso Sea or Santa Barbara Channel sea water every 6 \'96 8 analyses (Hansell and Carlson 1998). Daily reference waters were calibrated with CRMs provided by D. Hansell (University of Miami; Hansell 2005).\
+\
+TN calculation\
+\
+\uc0\u956 M N = (average sample area \'96 average machine blank area) / (slope of N std curve)\
+\
+TN references\
+\
+DOC references\
+\
+Carlson, C. A., D. A. Hansell, N. B. Nelson, D. A. Siegel, W. M. Smethie, S. Khatiwala, M. M. Meyers and E. Halewood 2010. Dissolved organic carbon export and subsequent remineralization in the mesopelagic and bathypelagic realms of the North Atlantic basin. 
+\f1\i Deep Sea Research II,
+\f0\i0  
+\f2\b 57
+\f0\b0 : 1433-1445.\
+\
+Hansell, D.A. and C.A. Carlson 1998. Deep ocean gradients in the concentration of dissolved organic carbon.\
+Nature, 395: 263-266.\
+\
+Hansell, D.A. 2005 Dissolved Organic Carbon Reference Material Program. EOS, 35:318-319.\
+\
+BATS Methods Manual  Chapter 16. Determination of Dissolved Organic Carbon by a High Temperature Combustion/Direct Injection Technique.  Updated by R.Parsons 4/1997, pp. 99-109.  version 4.\
+\
+Walsh, T.W., 1989. Total dissolved nitrogen in seawater: a new high-temperature combustion method and a\
+comparison with photo-oxidation. Mar. Chem., 26:295-311.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+}

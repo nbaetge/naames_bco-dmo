@@ -1,0 +1,65 @@
+Determination of Amino Acid Concentrations using HPLC
+
+This procedure describes the measurement of total dissolved amino acids (TDAA) and its 18 constituents using high performance liquid chromatography (HPLC).
+
+Definition: TDAA and each of its measured constituents are given in terms of nanomolar concentrations. 
+
+Principal of analyses: Replicate TDAA samples are hydrolyzed by 6 N HCl (with 1% 12 mmol L−1 ascorbic acid to prevent oxidation of amino acids by nitrate) under nitrogen at 110˚C for 20 h. Hydrolysate is filtered through combusted quartz wool and neutralized via evaporation under nitrogen. Nanopure blanks followed the same extraction protocol as samples. Amino acids were analyzed by high performance liquid chromatography (HPLC, Dionex ICS 5000+) equipped with a fluorescence detector (Dionex RF2000, Ex = 330 nm, Em = 418 nm) after pre-column o-phthaldialdehyde derivatization.
+
+Preparing Standard:
+* A 25 µM stock solution of Amino Acid Stand H (Sigma Cat # AAS18) is prepared. This standard contains 2.5 µmoles/mL for each L-amino-acid in 0.1 N HCl including Ammonium Chloride, Alanine, Arginine, Aspartic acid, Cystine (1.25 µmoles/mL, cannot detected with OPA), Glutamic acid, Glycine, Histidine, Isoleucine, Leucine, Lysine, Methionine, Phenylalanine, Proline (cannot detected with OPA), Serine, Threonine, Tyrosine, Valine.
+* Prior to each analytical run, γ-ABA and β-ALA are added to a working solution of the 25 µM stock. The final concentration of the working solution is 1 µM.
+* Working standard is diluted with nanopure water to  4 different concentrations: 5, 50, 100, and 250 nM. 
+* Diluted standards are run in autosampler vials containing 300 µL of standard, 400 µL of methanol, and 300 µl nanopure water. 
+
+Reagents:
+* OPA reagent: 100mg OPA (o-phathaldialdehyde, Sigma cat # P0657), 50µL 2-mercaptoethanol (Sigma cat # M6250), 100µL of 30% BRIJ 35 solution (VWR cat # PI20150), 
+1 mL methanol
+* Sodium Acetate: 0.1 M Na-acetate (HPLC grade, adjusted to pH 4.11 with acetic acid)
+* HPLC Solvent A: 0.5 M sodium acetate buffer (HPLC grade, Fisher cat # S2201) 
+* HPLC Solvent B: HPLC-grade methanol
+
+Hydrolysis: 
+* This is a liquid phase hydrolysis. 12 mM Ascorbic acid is added to all samples to reduced oxidation of AA’s due to nitrate. Samples are run in duplicate or triplicate. Steps are the following: 
+1. Thaw seawater
+2. Pipette 0.5 mL of sample/nano-water into precombusted (450˚C for 4 h) 5 mL ampoule 
+3. Add 5 µL 12 mM ascorbic acid, then add 0.56 mL 35% Optima HCl 
+4. Seal ampoules under N2 
+5. Hydrolyze in blocks on heating plates for 20h at 110C
+6. Vortex and filter cool samples through combusted quartz wool into 7 mL glass vials
+7. Aliquot 0.4 ml hydrolysate to a new 7 mL glass vial and dry under Nitrogen gas to neutralize. Archive the remaining hydrolysate at 4˚C
+8. Add 200 uL of nano water to each hydrolysate sample and dry under nitrogen gas 
+9. Resuspended dry samples to 400 uL with nano water and run.
+10. Prepare 1 ml samples in autosampler vials (300 µL of hydrolysate, 400 µL of methanol and a complement of clean nanopure water (300 µL if  300 µL of hydrolysate). 
+
+Derivatization:
+*60 µl OPA and 100 µl 1:1 mixture of 0.1 M Na-acetate buffer are added to each 1 mL sample prior to HPLC injection
+
+HPLC: 
+Amino acids are analyzed by high performance liquid chromatography (HPLC, Dionex ICS 5000+) equipped with a fluorescence detector (Dionex RF2000, Ex = 330 nm, Em = 418 nm) after pre-column o-phthaldialdehyde derivatization. We are using Dionex Acclaim 120, C18 (5 µm, 120 Å, 4.6 x 250 mm) column for analysis. Column and detector are equilibrated with 100% methanol (0.9 mL/min), then  solvent at 0 min (23% B+77% A) prior to each sample run.
+Samples are run at 10˚C.
+ 
+
+References:
+
+Cowie, G.L., Hedges, J.I. (1992). Improved amino acid quantification in environmental samples: charge-matched recovery standards and reduced analysis time. Marine Chemistry, 37, 223-238.
+
+Grimm, R., Herold, M. (1993). Sensitive amino acid analysis using fluorescence detection. Hewlett-Packard Application Note, publication number 12-5091-7740E.
+
+Grimm, R. (1992). Effect of buffer salts on amino acid analysis using combined OPA and FMOC derivatization. Hewlett-Packard Application Note, Publication number 12-5091-4212E
+
+Grimm, R. (1992). Amino acid analysis of protein and peptide hydrolyzates-Evaluation and accuracy. Hewlett-Packard Application Note, publication number 12-5091-4585E
+
+Jarrett, H. W., Cooksy, K. D., Ellies, B., Anderson, J. M. (1986). The separation of o-phthaldialdehyde derivatives of amino acids by reverse-phase chromatography on octylsilica columns. Analytical Biochemistry, 153, 189-198.
+
+Jones, B. N., Gilligan, J.P (1983). o-phthaldialdehyde procolumn derivatization and reversed-phase high performance liquid chromatographic of polypeptide hydrolysates and physiological fluids. Journal of Chromatography, 266, 471-482.
+
+Kaiser, K., Benner, R. (2009). Biochemical composition and size distribution of organic matter at the Pacific and Atlantic time-series stations. Marine Chemistry, 113, 63-77.
+
+Keil, R.G., Kirchman D.L (1991). Dissolved combined amino acids in marine waters as determined by a vapor-phase hydrolysis methods. Marine Chemistry, 33, 243-259.
+
+Lindroth, P., Mopper, K. (1979). High performance liquid chromatographic determination of subpicomoles amounts of amino acids by precolumn fluorescence derivatization with o-phthaldialdehyde. Analytical Chemistry, 51, 1667-1674.
+
+Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405.
+
+Roth, M., Hampaï, A. (1973). Column chromatography of amino acids with fluorescence detection. Journal of Chromatography, 83,353-356. 
