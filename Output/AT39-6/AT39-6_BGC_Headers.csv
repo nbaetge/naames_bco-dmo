@@ -1,0 +1,68 @@
+Header,Unit,Description,Method
+Cruise,NA,Cruise,NA
+Station,NA,Station,NA
+Type,NA,Sample Type (ODV format),NA
+Time_Stamp,yyyy-mm-ddThh:mm,Date/Time (ODV format),NA
+Latitude,degrees N,Latitude,NA
+Longitude,degrees E,Longitude,NA
+Bottom_Z,meters,Bottom Depth,NA
+CruiseCN,cruise sequential cast number,Cast number according to CTD/Bottle log sheets,NA
+SCN,station sequential cast number,"Cast numbers restart at each station i.e. for Station x, Biology Cast 1 = SxC1, Biology Cast 2 = SxC2, Deep Cast 1 =SxC3, Deep Cast 2 = SxC4",NA
+CampCN,campaign sequential cast number,"Cast numbers carried through the entire NAAMES campaign, never reseting for an individual cruise nor station",NA
+Niskin,NA,Niskin Number,NA
+Cast_Type,NA,"Biology, Deep, Shallow (does not fit Biology or Deep cast scheme), Microlayer",NA
+Target_Z,meters,Target Depth according to CTD/Bottle log sheets,NA
+Pressure,"digiquartz, db",Pressure,NA
+Density00,kg/m3,"Density, 1st sensor",NA
+Density11,kg/m3,"Density, 2nd sensor",NA
+Sal11,psu,"Salinity, 2nd Sensor",NA
+SoundVel,m/s,"Sound velocity, 1st sensor",NA
+SoundVel1,m/s,"Sound velocity, 2nd sensor",NA
+Oxygen_uM,umol/l,"Oxygen, 1st sensor, µmol/L",NA
+Oxygen_V,V,"Oxygen, 1st sensor, voltage",NA
+Temperature,degrees C,"Temperature, 1st sensor",NA
+Temperature1,degrees C,"Temperature, 2nd sensor",NA
+Conductivity,S/m,"Conductivity, 1st sensor",NA
+Conductivity1,S/m,"Conductivity, 2nd sensor",NA
+BeamT,%,"Beam Transmission, 1st Sensor",NA
+BeamAt,1/m,"Bean Attenuation, 1st sensor",NA
+Fluorescence,mg/m3,"Fluorescence, 1st sensor",NA
+Turbidity,NTU,"Turbidity, 1st sensor",NA
+UVP5,NA,"1st user polynomial sensor, in this case, UVP5",NA
+TOC,umol C/L,Total Organic Carbon,"High temperature combustion/oxidation (HTCO).  Reference: Carlson, C. A., D. A. Hansell, N. B. Nelson, D. A. Siegel, W. M. Smethie, S. Khatiwala, M. M. Meyers and E. Halewood 2010. Dissolved organic carbon export and subsequent remineralization in the mesopelagic and bathypelagic realms of the North Atlantic basin. Deep Sea Research II, 57: 1433-1445."
+TOC_QF,"WOCE Quality Flags (QF): 1 sample taken, 2 acceptable measurement, 3 Questionable measurement, 4 Bad measurement, 5 not reported, 9 no sample drawn",Total Organic Carbon Quality Flag,NA
+TOC_sd,NA,Total Organic Carbon Standard Deviation,NA
+DOC,umol C/L,Dissolved Organic Carbon,"High temperature combustion/oxidation (HTCO). Glass fiber filtrate type GF/F (Whatman). Reference: Carlson, C. A., D. A. Hansell, N. B. Nelson, D. A. Siegel, W. M. Smethie, S. Khatiwala, M. M. Meyers and E. Halewood 2010. Dissolved organic carbon export and subsequent remineralization in the mesopelagic and bathypelagic realms of the North Atlantic basin. Deep Sea Research II, 57: 1433-1445."
+DOC_QF,"WOCE Quality Flags (QF): 1 sample taken, 2 acceptable measurement, 3 Questionable measurement, 4 Bad measurement, 5 not reported, 9 no sample drawn",Dissolved Organic Carbon Quality Flag,NA
+DOC_sd,NA,Dissolved Organic Carbon Standard Deviation,NA
+TDN,umol N/L,Total Dissolved Nitrogen,NA
+TDN_QF,"WOCE Quality Flags (QF): 1 sample taken, 2 acceptable measurement, 3 Questionable measurement, 4 Bad measurement, 5 not reported, 9 no sample drawn",Total Dissolved Nitrogen Quality Flag,NA
+TDN_sd,NA,Total Dissolved Nitrogen Standard Deviation,NA
+BactProd,pmol Leu /L/h,Bacterial Production,"3H Leu uptake.  Reference: Smith DC, Azam F (1992) A simple, economical method for measuring bacterial protein synthesis rates in seawater using 3H-leucine. Mar Microb Food Webs 6: 107-114."
+BactProd_QF,"WOCE Quality Flags (QF): 1 sample taken, 2 acceptable measurement, 3 Questionable measurement, 4 Bad measurement, 5 not reported, 9 no sample drawn",Bacterial Production Quality Flag,NA
+BactProd_sd,NA,Bacterial Production Standard Deviation,NA
+BactAbund,E8 cells/L,Bacterial Abundance,"Epifluorescent microscopy & Flow Cytometry. References: Porter KG, Feig YS. (1980). The use of DAPI for identifying and counting aquatic microflora. Limnol Oceanogr 25: 943–948; Halewood, E. R., C. A. Carlson, M. A. Brzezinski, D. C. Reed, and J. Goodman. 2012. Annual cycle of organic matter partitioning and its availability to bacteria across the Santa Barbara Channel continental shelf. Aquat. Micro- biol. Ecol. 67: 189–209. doi: 10.3354/ame01586"
+BactAbund_QF,"WOCE Quality Flags (QF): 1 sample taken, 2 acceptable measurement, 3 Questionable measurement, 4 Bad measurement, 5 not reported, 9 no sample drawn","Bacterial Abundance, Quality Flag",NA
+BactAbund_sd,NA,Bacterial Standard Deviation,NA
+EZD_Morel,m,Euphotic Zone depth (1% light level or surface irradiance) determined by Morel algorithm on board,NA
+TDAA,nM,Total Dissolved Amino Acids,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+TDAA_QF,"WOCE Quality Flags (QF): 1 sample taken, 2 acceptable measurement, 3 Questionable measurement, 4 Bad measurement, 5 not reported, 9 no sample drawn",Total Dissolved Amino Acids Quality Flag,NA
+TDAA_stdev,nM,Total Dissolved Amino Acids Standard Deviation,NA
+Asp,nM,Aspartic Acid,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Glu,nM,Glutamic Acid,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+His,nM,Histadine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Ser,nM,Serine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Arg,nM,Arginine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Thr,nM,Threonine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Gly,nM,Glycine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Tau,nM,Taurine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Bala,nM,Beta-alanine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Tyr,nM,Tyrosine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Ala,nM,Alanine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+GABA,nM,Gamma-aminobutyric acid,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Met,nM,Methionine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Val,nM,Valine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Phe,nM,Phyenylalanine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Ile,nM,Isoleucine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Leu,nM,Leucine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."
+Lys,nM,Lysine,"High performance liquid chromatography (HPLC). Reference: Liu, S., Parsons, R., Opalk, K., Baetge, N., Giovannoni, S., Bolaños, L. M., et al. (2020). Different carboxyl-rich alicyclic molecules proxy compounds select distinct bacterioplankton for oxidation of dissolved organic matter in the mesopelagic Sargasso Sea. Limnol. Oceanogr. doi:10.1002/lno.11405."

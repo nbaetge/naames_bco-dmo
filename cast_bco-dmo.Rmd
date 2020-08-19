@@ -1,0 +1,97 @@
+---
+title: "cast_bco-dmo"
+author: "Nicholas Baetge"
+date: "8/18/2020"
+output: hgithub_document
+---
+
+Here we compile our lab's data from the NAAMES bottle file and prepare it for submission to BCO-DMO.
+
+```{r echo = F}
+library(tidyverse)
+library(googledrive)
+library(googlesheets4)
+library(data.table)  
+library(lubridate)
+library(readxl)
+library(openxlsx)
+```
+
+# Import Data
+
+```{r message = F, warning = F}
+
+headers <- read_sheet("https://docs.google.com/spreadsheets/d/1zw-W1k__BeuJg1oQpQQ_XT7zWLiY3dfL-dTaQ0pzN5Q/edit#gid=1446474071", sheet = "Bottle File Headers", skip = 0)
+
+saveRDS(headers, "Input/google_bf_headers.rds")
+
+cols <- headers %>% 
+  pull(col_type) %>% 
+  str_c(., collapse = "")
+
+data <-  read_sheet("https://docs.google.com/spreadsheets/d/1zw-W1k__BeuJg1oQpQQ_XT7zWLiY3dfL-dTaQ0pzN5Q/edit#gid=1446474071", sheet = "Bottle File", skip = 1, col_types = cols)
+
+
+saveRDS(data, "Input/google_bf.rds")
+
+
+```
+
+# Subset Data 
+
+```{r}
+colnames(data)
+
+subset <-  data %>%
+  select(Cruise:Target_Z, Pressure:UVP5, TOC:DOC_sd,  TDN:TDN_sd, BactProd:BactAbund_sd, TDAA:Lys) %>% 
+  select(-c(Date, Time)) %>% 
+  mutate(TOC_QF = ifelse(is.na(TOC_QF) & !is.na(TOC), 2, 9),
+         DOC_QF = ifelse(!is.na(DOC), DOC_QF, 9),
+         DOC_QF = ifelse(is.na(DOC_QF), 2, DOC_QF),
+         TDN_QF = ifelse(!is.na(TDN), TDN_QF, 9),
+         TDN_QF = ifelse(is.na(TDN_QF), 2, TDN_QF),
+         BactProd_QF = ifelse(!is.na(BactProd), BactProd_QF, 9),
+         BactProd_QF = ifelse(is.na(BactProd_QF), 2, BactProd_QF),
+         BactAbund_QF = ifelse(!is.na(BactAbund), BactAbund_QF, 9),
+         BactAbund_QF = ifelse(is.na(BactAbund_QF), 2, BactAbund_QF),
+         TDAA_QF = ifelse(!is.na(TDAA), TDAA_QF, 9),
+         TDAA_QF = ifelse(is.na(TDAA_QF), 2, TDAA_QF)) %>% 
+  mutate_all(funs(replace(., is.na(.), -999)))
+
+subset_headers <- headers %>% 
+  filter(Type %in% c("Metadata", "CTD Data", "Carlson")) %>% 
+  filter(!Header %in% c("Date", "Time", "Z", "TN", "TN_QF", "TN_sd", "EZD_morel", "DNA_ID")) %>% 
+  select(Header:Method)
+  
+```
+
+# Export Data
+
+```{r}
+subset %>%
+  filter(Cruise == "AT39-6") %>% 
+  write_csv(., "Output/AT39-6/AT39-6_BGC_Data.csv")
+
+subset_headers %>%
+  write_csv(., "Output/AT39-6/AT39-6_BGC_Headers.csv")
+
+path <- "Output/AT39-6"
+merge_file_name <- "Output/AT39-6/AT39-6_biogeochem_data_BCO-DMO.xlsx"
+sheet_names <- c("AT39-6 Data", "AT39-6 Metadata")
+
+filenames_list <- list.files(path = path, full.names = TRUE)
+
+merge <- lapply(filenames_list,function(filename){
+    print(paste("Merging",filename,sep = " "))
+    read.csv(filename)
+})
+
+names(merge) <- sheet_names
+
+write.xlsx(merge, merge_file_name)
+
+
+```
+
+
+

@@ -1,0 +1,65 @@
+---
+title: "exp_bco-dmo"
+author: "Nicholas Baetge"
+date: "8/18/2020"
+output: html_document
+---
+Here we compile NAAMES experimental data and prepare it for submission to BCO-DMO.
+
+```{r echo = F}
+library(tidyverse)
+library(googledrive)
+library(googlesheets4)
+library(data.table)  
+library(lubridate)
+library(readxl)
+library(openxlsx)
+```
+
+# Import and Subset Data 
+
+```{r}
+
+data <- read_rds("Input/processed_bge.rds") %>% 
+  select(Cruise, Station, Depth, Treatment, Bottle, Hours, s.gf75, cells, sd_cells, doc, sd_doc,  i.bc.ccf.c1, s.bc.ccf.c1) %>% 
+  rename(Stationary_Sampling = s.gf75, 
+         Cells = cells,
+         Cells_sd = sd_cells,
+         DOC = doc, 
+         DOC_sd = sd_doc,
+         Initial_BC = i.bc.ccf.c1,
+         Stationary_BC = s.bc.ccf.c1) %>% 
+  #remove the problematic CCFs as determined by the analysis
+   mutate(Initial_BC = ifelse(Cruise == "AT34" & Station == 3 & Depth == 10, NA, Initial_BC),
+         Stationary_BC = ifelse(Cruise == "AT34" & Station == 3 & Depth == 10, NA, Stationary_BC)) %>% 
+  mutate_all(funs(replace(., is.na(.), -999)))
+
+```
+
+# Export Data
+
+
+```{r}
+
+data %>%
+  filter(Cruise == "AT34") %>% 
+  write_csv(., "Output/AT34/Experiments/AT34_Experimental_Data.csv")
+
+
+path <- "Output/AT34/Experiments"
+merge_file_name <- "Output/AT38/Experiments/AT34_Experimental_data_BCO-DMO.xlsx"
+sheet_names <- c("AT34 Exp Metadata", "AT34 Exp Data")
+
+filenames_list <- list.files(path = path, full.names = TRUE)
+
+merge <- lapply(filenames_list,function(filename){
+    print(paste("Merging",filename,sep = " "))
+    read.csv(filename)
+})
+
+names(merge) <- sheet_names
+
+write.xlsx(merge, merge_file_name)
+
+```
+

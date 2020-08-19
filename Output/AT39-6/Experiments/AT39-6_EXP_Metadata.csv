@@ -1,0 +1,28 @@
+﻿Header,Unit,Description,Method
+Cruise,NA,Cruise,NA
+Station,NA,Station,NA
+Depth,meters,Depth from which incubation water was collected,
+Treatment,NA,"Indicates the type of amendment or mixture used, when applicable",
+Bottle,NA,ID for incubation bottle,
+Hours,hours,Time since experiment initiation,
+Stationary_Sampling,hours,Time at which sampling for POC took place,
+Cells,cells / L,Bacterial abundance,"Epifluorescent microscopy. Reference: Porter KG, Feig YS. (1980). The use of DAPI for identifying and counting aquatic microflora. Limnol Oceanogr 25: 943"
+Cells_sd,,Bacterial abundance standard deviation,
+DOC,µmol C / L,Dissolved organic carbon concentration,"High temperature combustion/oxidation (HTCO).  Reference: Carlson, C. A., D. A. Hansell, N. B. Nelson, D. A. Siegel, W. M. Smethie, S. Khatiwala, M. M. Meyers and E. Halewood 2010. Dissolved organic carbon export and subsequent remineralization in the mesopelagic and bathypelagic realms of the North Atlantic basin. Deep Sea Research II, 57: 1433-1445."
+DOC_sd,,Dissolved organic carbon concentration standard deviation,
+Initial_BC,µmol C / L,Bacterial carbon concentration at the start of the experiment,"High temperature combustion  (HTC). Glass fiber filtrate type GF/75 (Advantec). Reference:  ﻿James, A. K., Passow, U., Brzezinski, M. A., Parsons, R. J., Trapani, J. N., and Carlson, C. A. (2017). Elevated pCO2 enhances bacterioplankton removal of organic carbon. PLoS One 12, e0173145. doi:10.1371/journal.pone.0173145."
+Stationary_BC,µmol C / L,Bacterial carbon concentration at the stationary sampling time,"High temperature combustion  (HTC). Glass fiber filtrate type GF/75 (Advantec). Reference:  ﻿James, A. K., Passow, U., Brzezinski, M. A., Parsons, R. J., Trapani, J. N., and Carlson, C. A. (2017). Elevated pCO2 enhances bacterioplankton removal of organic carbon. PLoS One 12, e0173145. doi:10.1371/journal.pone.0173145."
+,,,
+,,,
+,,,
+"Bioassays were conducted at each station using water collected within 10 m depth horizon. Water was gently gravity-filtered serially through 142 mm PC filtration cartridges loaded with either a 1.2- or a 0.2-µm mixed cellulose ester membrane filter. The 1.2 µm filtrate was retained as a bacterioplankton inoculum with diluted large phytoplankton and nanoflagellate grazers while the 0.2 µm fraction was retained as particle-free DOM substrate. When possible, the filtration rig was directly attached to Niskin bottles with platinum-cured silicon tubing and the filtrate was collected into PC carboys. Otherwise, unfiltered water from the Niskin was first drawn into a PC carboy and then filtered into another PC carboy. Each bioassay was initiated by combining the 1.2 µm filtrate with the 0.2 µm filtrate in a 30:70 ratio. A pair of incubation bottles were then rinsed with this water and subsequently filled. Ammendments were added if applicable. 8 pre-combusted (4 hours at 450˚C) 40 mL EPA borosilicate glass incubation vials were also rinsed and filled with initial incubation water. Bioassays were maintained in Fisherbrand Isotemp BOD refrigerated incubators. They were kept in darkness for up to 81 days at temperatures as near in situ as logistically possible (±1.5˚C). Incubation bottles were sampled over the duration of each campaign, while vials were sacrificially sampled for organic carbon during and beyond the duration of each campaign. Bacterioplankton carbon (BC, µmol C / L) refers to the carbon content of a population at any given time. BC at the initial and stationary growth conditions of each bioassay were estimated by applying empirical carbon conversion factors (CCFs, fg C / cell) to POC estimates. The dissolved organic carbon (DOC) fraction in a bioassay, was estimated by subtracting bacterioplankton cell carbon (µmol C / L) from TOC measurements. ",,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
